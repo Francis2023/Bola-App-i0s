@@ -99,6 +99,9 @@
 		6532C84725468AE000979373 /* BankingApp */ = {
 			isa = PBXGroup;
 			children = (
+				657040CA257DE4F300484D0C /* Models */,
+				657040CB257DE50200484D0C /* Views */,
+				657040CC257DE51C00484D0C /* Controllers */,
 				6532C84825468AE000979373 /* AppDelegate.swift */,
 				6532C84A25468AE000979373 /* SceneDelegate.swift */,
 				6532C84C25468AE000979373 /* ViewController.swift */,
@@ -126,6 +129,27 @@
 				6532C86C25468AE700979373 /* Info.plist */,
 			);
 			path = BankingAppUITests;
+			sourceTree = "<group>";
+		};
+		657040CA257DE4F300484D0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		657040CB257DE50200484D0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		657040CC257DE51C00484D0C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
