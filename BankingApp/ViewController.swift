@@ -9,8 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var usernameInput: UITextField!
+    @IBOutlet weak var passwordInput: UITextField!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var aboutButton: UIButton!
+    @IBOutlet weak var contactUsButton: UIButton!
+    @IBOutlet weak var helpButton: UIButton!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+       super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
