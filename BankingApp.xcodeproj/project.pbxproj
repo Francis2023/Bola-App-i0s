@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16B36627B670068A086991DD /* Pods_BankingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBB0E84844CE6937791275B /* Pods_BankingApp.framework */; };
 		6532C84925468AE000979373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532C84825468AE000979373 /* AppDelegate.swift */; };
 		6532C84B25468AE000979373 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532C84A25468AE000979373 /* SceneDelegate.swift */; };
-		6532C84D25468AE000979373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532C84C25468AE000979373 /* ViewController.swift */; };
+		6532C84D25468AE000979373 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532C84C25468AE000979373 /* SignInController.swift */; };
 		6532C85025468AE000979373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6532C84E25468AE000979373 /* Main.storyboard */; };
 		6532C85225468AE600979373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6532C85125468AE600979373 /* Assets.xcassets */; };
 		6532C85525468AE600979373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6532C85325468AE600979373 /* LaunchScreen.storyboard */; };
 		6532C86025468AE700979373 /* BankingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532C85F25468AE700979373 /* BankingAppTests.swift */; };
 		6532C86B25468AE700979373 /* BankingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532C86A25468AE700979373 /* BankingAppUITests.swift */; };
+		657040D125849DF600484D0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 657040D025849DF600484D0C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35D65EFFA74B9D020AB1F0E2 /* Pods-BankingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankingApp.debug.xcconfig"; path = "Target Support Files/Pods-BankingApp/Pods-BankingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6532C84525468AE000979373 /* BankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6532C84825468AE000979373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6532C84A25468AE000979373 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6532C84C25468AE000979373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6532C84C25468AE000979373 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		6532C84F25468AE000979373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6532C85125468AE600979373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6532C85425468AE600979373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		6532C86625468AE700979373 /* BankingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6532C86A25468AE700979373 /* BankingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingAppUITests.swift; sourceTree = "<group>"; };
 		6532C86C25468AE700979373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		657040D025849DF600484D0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9EBB0E84844CE6937791275B /* Pods_BankingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A285F9AFC9FB2F6A29F3A39B /* Pods-BankingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankingApp.release.xcconfig"; path = "Target Support Files/Pods-BankingApp/Pods-BankingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B36627B670068A086991DD /* Pods_BankingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ECE707B3DBB3008967A245B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EBB0E84844CE6937791275B /* Pods_BankingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6532C83C25468ADF00979373 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +98,8 @@
 				6532C85E25468AE700979373 /* BankingAppTests */,
 				6532C86925468AE700979373 /* BankingAppUITests */,
 				6532C84625468AE000979373 /* Products */,
+				C67B9B7CF107E6D1A5517F5A /* Pods */,
+				1ECE707B3DBB3008967A245B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,11 +121,10 @@
 				657040CC257DE51C00484D0C /* Controllers */,
 				6532C84825468AE000979373 /* AppDelegate.swift */,
 				6532C84A25468AE000979373 /* SceneDelegate.swift */,
-				6532C84C25468AE000979373 /* ViewController.swift */,
-				6532C84E25468AE000979373 /* Main.storyboard */,
 				6532C85125468AE600979373 /* Assets.xcassets */,
 				6532C85325468AE600979373 /* LaunchScreen.storyboard */,
 				6532C85625468AE600979373 /* Info.plist */,
+				657040D025849DF600484D0C /* GoogleService-Info.plist */,
 			);
 			path = BankingApp;
 			sourceTree = "<group>";
@@ -141,6 +157,7 @@
 		657040CB257DE50200484D0C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6532C84E25468AE000979373 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,8 +165,19 @@
 		657040CC257DE51C00484D0C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6532C84C25468AE000979373 /* SignInController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C67B9B7CF107E6D1A5517F5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35D65EFFA74B9D020AB1F0E2 /* Pods-BankingApp.debug.xcconfig */,
+				A285F9AFC9FB2F6A29F3A39B /* Pods-BankingApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6532C86F25468AE700979373 /* Build configuration list for PBXNativeTarget "BankingApp" */;
 			buildPhases = (
+				8B575604AAD39294F7E0DCD1 /* [CP] Check Pods Manifest.lock */,
 				6532C84125468ADF00979373 /* Sources */,
 				6532C84225468ADF00979373 /* Frameworks */,
 				6532C84325468ADF00979373 /* Resources */,
+				C934952798780604B5347918 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6532C85525468AE600979373 /* LaunchScreen.storyboard in Resources */,
+				657040D125849DF600484D0C /* GoogleService-Info.plist in Resources */,
 				6532C85225468AE600979373 /* Assets.xcassets in Resources */,
 				6532C85025468AE000979373 /* Main.storyboard in Resources */,
 			);
@@ -277,12 +308,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B575604AAD39294F7E0DCD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C934952798780604B5347918 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankingApp/Pods-BankingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankingApp/Pods-BankingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BankingApp/Pods-BankingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6532C84125468ADF00979373 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6532C84D25468AE000979373 /* ViewController.swift in Sources */,
+				6532C84D25468AE000979373 /* SignInController.swift in Sources */,
 				6532C84925468AE000979373 /* AppDelegate.swift in Sources */,
 				6532C84B25468AE000979373 /* SceneDelegate.swift in Sources */,
 			);
@@ -457,6 +530,7 @@
 		};
 		6532C87025468AE700979373 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35D65EFFA74B9D020AB1F0E2 /* Pods-BankingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +549,7 @@
 		};
 		6532C87125468AE700979373 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A285F9AFC9FB2F6A29F3A39B /* Pods-BankingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
