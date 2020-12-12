@@ -10,7 +10,5 @@ target 'BankingApp' do
    pod 'Firebase/Auth'
    pod 'Firebase/Firestore'
   
-    #CLTypingLabel Pod
-   pod 'CLTypingLabel'
-
+   
 end

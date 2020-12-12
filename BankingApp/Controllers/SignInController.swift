@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 
+
 class SignInController: UIViewController {
     
     // Define IBOutlets
@@ -23,18 +24,8 @@ class SignInController: UIViewController {
     
     override func viewDidLoad() {
        super.viewDidLoad()
-        // Add animation to the title label (BOLA)
-        titleLabel.text = ""
-        var charIndex = 0.0
-        let titleText = Constants.appName
-        for letter in titleText {
-            
-            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
-                self.titleLabel.text?.append(letter)
-            }
-            charIndex += 1
-        }
-        
+    
+        titleLabel.text = Constants.appName
         
     }
 
