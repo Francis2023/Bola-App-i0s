@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import Firebase
 
 class SignInController: UIViewController {
+    
+    // Define IBOutlets
 
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var usernameInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var signInButton: UIButton!
@@ -19,7 +23,8 @@ class SignInController: UIViewController {
     
     override func viewDidLoad() {
        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
     }
 
 
