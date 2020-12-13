@@ -317,6 +317,9 @@
                                                 <state key="normal" title="Sign Up">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signUpPressed:" destination="d5W-61-qvQ" eventType="touchUpInside" id="bbl-F9-12r"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Fq-aF-p98">
                                                 <rect key="frame" x="85" y="60" width="242.5" height="35"/>

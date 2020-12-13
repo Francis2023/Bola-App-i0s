@@ -9,6 +9,6 @@ target 'BankingApp' do
    pod 'Firebase/Analytics'
    pod 'Firebase/Auth'
    pod 'Firebase/Firestore'
-  
+   pod 'FirebaseFirestoreSwift', '~> 7.0-beta'
    
 end
