@@ -78,6 +78,10 @@
                                                 <state key="normal" title="Sign In">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5wc-ag-eFR"/>
+                                                    <segue destination="gkG-t9-6QV" kind="show" identifier="signInToHomePage" id="VfV-5F-FZa"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -162,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-184" y="-731"/>
+            <point key="canvasLocation" x="-190" y="-731"/>
         </scene>
         <!--Sign Up Controller-->
         <scene sceneID="77c-YZ-H84">
@@ -319,6 +323,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="signUpPressed:" destination="d5W-61-qvQ" eventType="touchUpInside" id="bbl-F9-12r"/>
+                                                    <segue destination="gkG-t9-6QV" kind="show" identifier="signUpToHomePage" id="12m-va-VqV"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Fq-aF-p98">
@@ -378,7 +383,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ega-oo-nZX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="696" y="-731"/>
+            <point key="canvasLocation" x="717" y="-1238"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QF0-Tr-2Cu">
+            <objects>
+                <viewController id="gkG-t9-6QV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SEZ-AH-TXZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="N9b-wQ-hLj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RfZ-G4-Qc2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ouv-fs-TOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="-713"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pin-rr-ktP">
@@ -404,9 +425,15 @@
             <point key="canvasLocation" x="-1077" y="-731"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VfV-5F-FZa"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

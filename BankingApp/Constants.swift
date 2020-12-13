@@ -8,4 +8,6 @@
 struct Constants {
     
     static let appName = "BOLA"
+    static let signUpSegue = "signUpToHomePage"
+    static let signInSegue = "signInToHomePage"
 }

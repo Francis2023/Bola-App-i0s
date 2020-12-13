@@ -46,14 +46,13 @@ class SignUpController: UIViewController {
                 } else {
                     
                     self.createUser()
-
+                    self.performSegue(withIdentifier: Constants.signUpSegue , sender: self)
                 }
             }
         }
         
     }
     
-    // function to create user
     private func createUser() {
         
         let merchant = merchantInput.isOn
