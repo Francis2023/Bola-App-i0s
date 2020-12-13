@@ -46,7 +46,7 @@ class SignUpController: UIViewController {
                 } else {
                     
                     self.createUser()
-                    self.performSegue(withIdentifier: Constants.signUpSegue , sender: self)
+                    self.performSegue(withIdentifier: Constants.signUpSegue, sender: self)
                 }
             }
         }
