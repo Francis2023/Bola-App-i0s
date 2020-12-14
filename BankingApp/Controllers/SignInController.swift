@@ -32,9 +32,15 @@ class SignInController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false
         
-        if Auth.auth().currentUser != nil {
-           self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
-        } 
+        
+    }
+    
+    // Check if the user didn't logout, if not, go to homepage
+    override func viewDidAppear(_ animated: Bool){
+     super.viewDidAppear(animated)
+     if Auth.auth().currentUser != nil {
+       self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
+    }
     }
     
     // View Did Load
