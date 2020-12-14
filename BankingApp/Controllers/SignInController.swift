@@ -36,18 +36,17 @@ class SignInController: UIViewController {
     }
     
     // Check if the user didn't logout, if not, go to homepage
-    override func viewDidAppear(_ animated: Bool){
-     super.viewDidAppear(animated)
-     if Auth.auth().currentUser != nil {
-       self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
-    }
-    }
-    
+//    override func viewDidAppear(_ animated: Bool){
+//     super.viewDidAppear(animated)
+//     if Auth.auth().currentUser != nil {
+//       self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
+//    }
+//    }
+//
     // View Did Load
     override func viewDidLoad() {
        super.viewDidLoad()
-    
-        titleLabel.text = Constants.appName
+
         
     }
 
@@ -64,6 +63,7 @@ class SignInController: UIViewController {
                                         
                     alertController.addAction(defaultAction)
                     self.present(alertController, animated: true, completion: nil)
+                    self.viewDidLoad()
                         
                 }
             }
