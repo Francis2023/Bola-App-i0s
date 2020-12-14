@@ -45,11 +45,16 @@ class SignInController: UIViewController {
         
         if let email = usernameInput.text, let password = passwordInput.text {
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-             // guard let strongSelf = self else { return }
-                if let e = error {
-                    print(e.localizedDescription)
-                } else {
+                
+                if (error == nil){
                     self.performSegue(withIdentifier: Constants.signInSegue, sender: self)
+                } else {
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                                        
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                        
                 }
             }
         }
@@ -57,4 +62,3 @@ class SignInController: UIViewController {
     
     
 }
-
