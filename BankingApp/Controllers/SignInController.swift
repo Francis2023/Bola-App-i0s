@@ -41,6 +41,19 @@ class SignInController: UIViewController {
         
     }
 
+    @IBAction func signInPressed(_ sender: UIButton) {
+        
+        if let email = usernameInput.text, let password = passwordInput.text {
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+             // guard let strongSelf = self else { return }
+                if let e = error {
+                    print(e.localizedDescription)
+                } else {
+                    self.performSegue(withIdentifier: Constants.signInSegue, sender: self)
+                }
+            }
+        }
+    }
     
     
 }

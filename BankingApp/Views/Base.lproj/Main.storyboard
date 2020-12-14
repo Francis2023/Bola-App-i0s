@@ -79,7 +79,7 @@
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5wc-ag-eFR"/>
+                                                    <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1o3-6c-U7o"/>
                                                     <segue destination="gkG-t9-6QV" kind="show" identifier="signInToHomePage" id="VfV-5F-FZa"/>
                                                 </connections>
                                             </button>
