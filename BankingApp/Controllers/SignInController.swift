@@ -31,6 +31,10 @@ class SignInController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false
+        
+        if Auth.auth().currentUser != nil {
+           self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
+        } 
     }
     
     // View Did Load
