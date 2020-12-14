@@ -53,7 +53,25 @@ class SignUpController: UIViewController {
         
     }
     
-    private func createUser() {
+    // MARK: Validate the fields
+    
+    func validateFields() -> String? {
+        
+        // Check that all fields are filled in
+        if fullnameInput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "",
+            usernameInput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "",
+            phoneNumberInput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "",
+            emailAddressInput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "",
+            passwordInput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
+            
+            return "Please fill in all fields"
+        }
+        return nil
+    }
+    
+    // MARK: Create user function
+    
+    func createUser() {
         
         let merchant = merchantInput.isOn
         
