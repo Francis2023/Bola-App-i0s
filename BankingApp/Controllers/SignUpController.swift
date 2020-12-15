@@ -44,7 +44,12 @@ class SignUpController: UIViewController {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 // Print error else create user's profile and go to the home page
                 if error != nil {
-                    print(error!)
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                    
                 } else {
                         
                     self.createUser()
