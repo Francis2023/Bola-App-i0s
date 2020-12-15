@@ -80,7 +80,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1o3-6c-U7o"/>
-                                                    <segue destination="gkG-t9-6QV" kind="show" identifier="signInToHomePage" id="VfV-5F-FZa"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -162,6 +161,7 @@
                         <outlet property="signUpButton" destination="u2v-tl-9Tc" id="kXp-aV-p97"/>
                         <outlet property="titleLabel" destination="B0n-Na-E9m" id="zmS-WT-Lai"/>
                         <outlet property="usernameInput" destination="SiU-sf-ost" id="pVE-ol-tbn"/>
+                        <segue destination="gkG-t9-6QV" kind="show" identifier="signInToHomePage" id="rLT-Z4-dwI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -426,7 +426,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XeH-MC-itA"/>
+        <segue reference="rLT-Z4-dwI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">

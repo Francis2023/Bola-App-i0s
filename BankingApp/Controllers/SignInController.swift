@@ -63,12 +63,18 @@ class SignInController: UIViewController {
                                         
                     alertController.addAction(defaultAction)
                     self.present(alertController, animated: true, completion: nil)
-                    self.viewDidLoad()
+                    self.clearTextField()
                         
                 }
             }
         }
     }
     
+    
+    // MARK: Clear textfield function
+    func clearTextField() {
+        usernameInput.text = ""
+        passwordInput.text = ""
+    }
     
 }
