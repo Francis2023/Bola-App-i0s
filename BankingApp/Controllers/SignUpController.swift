@@ -37,14 +37,16 @@ class SignUpController: UIViewController {
     }
     
     @IBAction func signUpPressed(_ sender: UIButton) {
-        // Create new user using Firebase email/password authenication
+        
+        
+            // Create new user using Firebase email/password authenication
         if let email = emailAddressInput.text, let password = passwordInput.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 // Print error else create user's profile and go to the home page
-                if let e = error {
-                    print(e)
+                if error != nil {
+                    print(error!)
                 } else {
-                    
+                        
                     self.createUser()
                     self.performSegue(withIdentifier: Constants.signUpSegue, sender: self)
                 }
@@ -53,21 +55,7 @@ class SignUpController: UIViewController {
         
     }
     
-    // MARK: Validate the fields
     
-    func validateFields() -> String? {
-        
-        // Check that all fields are filled in
-        if fullnameInput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "",
-            usernameInput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "",
-            phoneNumberInput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "",
-            emailAddressInput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "",
-            passwordInput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
-            
-            return "Please fill in all fields"
-        }
-        return nil
-    }
     
     // MARK: Create user function
     
@@ -97,7 +85,5 @@ class SignUpController: UIViewController {
               }
         }
     }
-    
-    
     
 }

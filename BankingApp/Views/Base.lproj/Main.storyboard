@@ -323,7 +323,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="signUpPressed:" destination="d5W-61-qvQ" eventType="touchUpInside" id="bbl-F9-12r"/>
-                                                    <segue destination="gkG-t9-6QV" kind="show" identifier="signUpToHomePage" id="12m-va-VqV"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Fq-aF-p98">
@@ -379,6 +378,7 @@
                         <outlet property="phoneNumberInput" destination="ivT-9e-Y7g" id="84L-Sd-Q7g"/>
                         <outlet property="signUpButton" destination="df2-PW-bHv" id="XqE-rk-CI6"/>
                         <outlet property="usernameInput" destination="YTi-YK-siG" id="gS9-7Q-wIU"/>
+                        <segue destination="gkG-t9-6QV" kind="show" identifier="signUpToHomePage" id="XeH-MC-itA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ega-oo-nZX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -426,7 +426,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VfV-5F-FZa"/>
+        <segue reference="XeH-MC-itA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
