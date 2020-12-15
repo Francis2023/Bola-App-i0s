@@ -36,6 +36,11 @@ class SignUpController: UIViewController {
         db = Firestore.firestore()
     }
     
+    override func didReceiveMemoryWarning() {
+             super.didReceiveMemoryWarning()
+             // Dispose of any resources that can be recreated.
+           }
+    
     @IBAction func signUpPressed(_ sender: UIButton) {
         
         
@@ -44,11 +49,14 @@ class SignUpController: UIViewController {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 // Print error else create user's profile and go to the home page
                 if error != nil {
+                    
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     
                     alertController.addAction(defaultAction)
                     self.present(alertController, animated: true, completion: nil)
+                    
+                    self.clearTextField()
                     
                 } else {
                         
@@ -90,5 +98,15 @@ class SignUpController: UIViewController {
               }
         }
     }
+    
+    func clearTextField() {
+        fullnameInput.text = ""
+        usernameInput.text = ""
+        phoneNumberInput.text = ""
+        emailAddressInput.text = ""
+        passwordInput.text = ""
+        merchantInput.isOn = false
+    }
+    
     
 }
