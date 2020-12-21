@@ -57,6 +57,8 @@ class SignInController: UIViewController {
                 
                 if (error == nil){
                     self.performSegue(withIdentifier: Constants.signInSegue, sender: self)
+                    self.clearTextField()
+                    
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
